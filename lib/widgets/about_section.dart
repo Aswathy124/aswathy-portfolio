@@ -31,9 +31,7 @@ class _AboutText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const paras = [
-      "I'm a Flutter Developer with a strong academic background — MCA (7.5 CGPA) and BCA (7.89 CGPA) — and over a year of hands-on industry experience at Inciem Business Consultants.",
-      "I'm passionate about building clean, performant, and beautiful mobile applications using Flutter & Dart. I enjoy turning complex business requirements into smooth, intuitive app experiences.",
-      "I'm actively expanding my skill set, exploring advanced Flutter patterns, backend integration, and planning to publish open-source Flutter packages soon.",
+  " I’m a Flutter Developer with over a year of hands-on industry experience at Inciem Business Consultants.", "I’m passionate about building clean, performant, and visually appealing mobile applications using Flutter & Dart. I enjoy transforming complex business requirements into smooth, intuitive, and user-friendly app experiences", "I’m continuously improving my skills and exploring advanced Flutter patterns, state management, and scalable app architecture to build better and more efficient applications.",
     ];
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,

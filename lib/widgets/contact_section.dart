@@ -73,34 +73,34 @@ class _ContactSectionState extends State<ContactSection> {
           _SocialLink(icon: '✉', label: 'Email', sub: AppStrings.email, url: 'mailto:${AppStrings.email}'),
        SizedBox(height: 4.h),
           // Form
-          _FormField(label: 'Your Name', ctrl: _nameCtrl, hint: 'John Doe'),
-          const SizedBox(height: 12),
-          _FormField(label: 'Email Address', ctrl: _emailCtrl, hint: 'john@company.com', keyboard: TextInputType.emailAddress),
-          const SizedBox(height: 12),
-          _FormField(label: 'Subject', ctrl: _subjectCtrl, hint: 'Flutter Developer Opportunity'),
-          const SizedBox(height: 12),
-          _FormField(label: 'Message', ctrl: _msgCtrl, hint: 'Tell me about the  project...', maxLines: 5),
-          const SizedBox(height: 16),
-          GestureDetector(
-            onTap: _sent ? null : () async => await _submit(),
-            child: AnimatedContainer(
-              duration: const Duration(milliseconds: 300),
-              width: double.infinity,
-              padding: const EdgeInsets.symmetric(vertical: 15),
-              decoration: BoxDecoration(
-                gradient: _sent
-                    ? const LinearGradient(colors: [AppColors.tealDark, AppColors.blueDark])
-                    : AppColors.gradient,
-                borderRadius: BorderRadius.circular(8),
-              ),
-              child: Center(
-                child: Text(
-                  _sent ? '✓  Message Sent!' : 'Send Message  →',
-                  style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w700, fontSize: 15),
-                ),
-              ),
-            ),
-          ),
+          // _FormField(label: 'Your Name', ctrl: _nameCtrl, hint: 'John Doe'),
+          // const SizedBox(height: 12),
+          // _FormField(label: 'Email Address', ctrl: _emailCtrl, hint: 'john@company.com', keyboard: TextInputType.emailAddress),
+          // const SizedBox(height: 12),
+          // _FormField(label: 'Subject', ctrl: _subjectCtrl, hint: 'Flutter Developer Opportunity'),
+          // const SizedBox(height: 12),
+          // _FormField(label: 'Message', ctrl: _msgCtrl, hint: 'Tell me about the  project...', maxLines: 5),
+          // const SizedBox(height: 16),
+          // GestureDetector(
+          //   onTap: _sent ? null : () async => await _submit(),
+          //   child: AnimatedContainer(
+          //     duration: const Duration(milliseconds: 300),
+          //     width: double.infinity,
+          //     padding: const EdgeInsets.symmetric(vertical: 15),
+          //     decoration: BoxDecoration(
+          //       gradient: _sent
+          //           ? const LinearGradient(colors: [AppColors.tealDark, AppColors.blueDark])
+          //           : AppColors.gradient,
+          //       borderRadius: BorderRadius.circular(8),
+          //     ),
+          //     child: Center(
+          //       child: Text(
+          //         _sent ? '✓  Message Sent!' : 'Send Message  →',
+          //         style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w700, fontSize: 15),
+          //       ),
+          //     ),
+          //   ),
+          // ),
         ],
       ),
     );
@@ -145,12 +145,12 @@ class _SocialLink extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(label, style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w700, color: AppColors.textPrimary)),
-                Text(sub, style: const TextStyle(fontSize: 11, color: AppColors.textMuted)),
+                Text(label, style: TextStyle(fontSize: 13.sp, fontWeight: FontWeight.w700, color: AppColors.textPrimary)),
+                Text(sub, style:  TextStyle(fontSize: 11.sp, color: AppColors.textMuted)),
               ],
             ),
             const Spacer(),
-            const Icon(Icons.arrow_forward_ios, size: 13, color: AppColors.textMuted),
+             Icon(Icons.arrow_forward_ios, size: 13, color: AppColors.textMuted),
           ],
         ),
       ),

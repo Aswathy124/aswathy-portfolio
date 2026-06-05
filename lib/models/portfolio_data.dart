@@ -60,13 +60,11 @@ class PortfolioData {
       techStack: ['Flutter', 'Dart', 'Firebase', 'REST APIs' ,'Git', 'Android', 'iOS'],
     ),
   ];
-
   static const List<StatModel> stats = [
-    StatModel(value: '1.10yr', label: 'Industry Exp'),
-    StatModel(value: 'MCA', label: '7.5 CGPA'),
-    StatModel(value: 'BCA', label: '7.89 CGPA'),
+    StatModel(value: '1+ Yr', label: 'Experience'),
+    StatModel(value: 'Flutter Dev', label: 'Specialization'),
+    StatModel(value: 'Open to Work', label: 'Availability'),
   ];
-
   static const List<String> techTags = [
     'Flutter', 'Dart', 'Firebase', 'REST APIs',
      'GetX', 'SQLite', 'Hive', 'Git', 'Agile',
